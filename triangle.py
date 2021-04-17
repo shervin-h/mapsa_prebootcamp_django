@@ -6,7 +6,7 @@ degrees = degrees.split(' ')
 def sum_angles(degs):
     sum = 0
     for i in degs:
-        if int(i) == 0:
+        if int(i) <= 0 or int(i) > 178:
             return False
         else:
             sum += int(i)
