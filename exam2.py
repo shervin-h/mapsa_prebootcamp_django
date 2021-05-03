@@ -29,7 +29,7 @@ b = int(b)
 count = 0
 for i in range(1, x + 1):
     for j in range(1, x + 1):
-        if i % a == 0 and j % b == 0:
+        if i % a == 0 and j % b == 0 and i + j <= x:
             count += 1
 
 print(count)
