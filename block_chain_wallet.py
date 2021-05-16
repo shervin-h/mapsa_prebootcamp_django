@@ -72,13 +72,15 @@ def transfer(_to_addr: str, _value: float, private_key: str, public_key: str , n
             return 0
 
 
-
 # print (
 #     transfer(acc.address ,
 #                 0.01,
 #                 "a49443970e8c717e218d312c0a7d1b390bea090cd3809011fd5cb926851f2e2b",
 #                 "0xAf77fB90baCE88edad8be674232C4a072BdC29A3")
 #     )
+
+navid_wallet = "0xAf77fB90baCE88edad8be674232C4a072BdC29A3"
+navid_private_key = "a49443970e8c717e218d312c0a7d1b390bea090cd3809011fd5cb926851f2e2b"
 
 my_wallet = "0x9200e872f21B28E61600a62A3628ff30688e107C"
 my_private_key = "e3aa1cb4960222f0731a884d96c377fa00ba64424fd0bb76ba97bb7fe272d937"
@@ -105,3 +107,6 @@ for k, v in wallets_and_their_balances.items():
     if v < mean/10:
         transfer(k, 0.05, "e3aa1cb4960222f0731a884d96c377fa00ba64424fd0bb76ba97bb7fe272d937", "0x9200e872f21B28E61600a62A3628ff30688e107C")
 
+print(balance(my_wallet))
+
+# by Shervin Hasanzadeh
