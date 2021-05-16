@@ -125,7 +125,7 @@ for k, v in wallets_and_their_balances.items():
     if v < mean/10:
         transaction = transfer(k, 0.05, my_private_key, my_wallet, _nounce)
         _nounce += 1
-        transactions.append(str(transaction) + '\n' + '-'*10)
+        transactions.append('-'*4 + str(transaction) + '\n')
 
 f = open('transactions.txt', 'w', encoding='UTF-8')
 f.writelines(transactions)
