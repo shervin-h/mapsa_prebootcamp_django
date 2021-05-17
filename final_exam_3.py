@@ -32,17 +32,16 @@ for student in Student_submissions.items():
     d['name'] = student[0]
     d['correct'] = 0
     d['wrong'] = 0
-
+    j = 0
     for v in student[1]:
         # print(v)
-        i = 0
-        if list(v.items())[0][1] == correct_answers[i][1]:
+        if list(v.items())[0][1] == correct_answers[j][1]:
             d['correct'] += 1
-            i += 1
+            j += 1
         else:
             d['wrong'] += 1
-            i += 1
-
+            j += 1
+        # print(j)
     result.append(d)
 
 # print(result)
