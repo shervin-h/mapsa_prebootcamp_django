@@ -13,14 +13,6 @@
 i=30 -> 30+1 ch  => 30+1 min
 '''
 
-k = int(input())
 
-j = 0
-t = 0
-for i in range(k):
-    j += 1
-    t += j
-
-print(t)
 
 # by Shervin Hasanzadeh
