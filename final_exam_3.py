@@ -55,7 +55,7 @@ for student in result:
 
 
 f = open('names_marks.txt', 'w', encoding='UTF-8')
-# json.dump(res)
+# f.write(json.dump(res))
 # or
 f.write(str(res))
 f.close()
